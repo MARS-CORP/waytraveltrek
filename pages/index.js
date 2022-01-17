@@ -21,6 +21,8 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
+        <h1 className='text-3xl font-bold underline'>Comenzando con Next.js</h1>
+
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
