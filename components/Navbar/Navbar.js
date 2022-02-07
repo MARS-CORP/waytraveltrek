@@ -20,6 +20,13 @@ function Navbar() {
           <li className="inline-block mr-8 hover:text-red-800">Contacto</li>
         </ul>
       </div>
+      <div className='block md:hidden mt-2'>
+        <Image src='https://res.cloudinary.com/waytraveltrek/image/upload/v1644275019/waytraveltrek/icons/menu-square-button_icon-icons.com_73216_dt6xwi.png'
+        alt='Menu icon'
+        width={50}
+        height={50}
+        />
+      </div>
     </div>
   );
 }
