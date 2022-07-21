@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="text-center">
       <Image
-        src="https://res.cloudinary.com/waytraveltrek/image/upload/v1644208393/waytraveltrek/cover/DSC06705_pndxmo.png"
+        src="/img/portada.png"
         width={1200}
         height={800}
         layout="responsive"
