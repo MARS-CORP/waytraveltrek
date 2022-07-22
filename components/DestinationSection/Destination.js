@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 function Destination({ destination }) {
   return (
     <div className="max-w-xs sm:max-w-md md:max-w-2xl md:max-h-60 lg:max-w-4xl mx-auto bg-slate-50 rounded-xl shadow-md overflow-hidden">

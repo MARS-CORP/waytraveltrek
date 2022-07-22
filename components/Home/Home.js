@@ -1,5 +1,6 @@
 import Destination from '../DestinationSection/Destination';
 import Header from '../HeaderSection/Header';
+import HotelCard from '../Hotel/HotelCard';
 import Navbar from '../Navbar/Navbar';
 import Services from '../OurServices/Services';
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -23,12 +24,6 @@ function Home() {
       imageUrl: 'portada.png',
       imageAlt: 'Texto de descripcion de imagen',
       serviceName: 'Casas de Renta',
-    },
-    {
-      id: 4,
-      imageUrl: 'portada.png',
-      imageAlt: 'Texto de descripcion de imagen',
-      serviceName: 'Experiencias',
     },
   ];
 
@@ -59,6 +54,39 @@ function Home() {
     },
   ];
 
+  const hotelData = [
+    {
+      id: 1,
+      name: 'Habana libre',
+      imageUrl: 'portada.png',
+      imageAlt: 'Descripcion de la imagen',
+      category: 5,
+      qualification: 4.2,
+      comments: 500,
+      price: 80,
+    },
+    {
+      id: 2,
+      name: 'Melia Inernacional Varadero',
+      imageUrl: 'portada.png',
+      imageAlt: 'Descripcion de la imagen',
+      category: 5,
+      qualification: 4.2,
+      comments: 500,
+      price: 80,
+    },
+    {
+      id: 3,
+      name: 'Blue Diamond Prado y Malecón',
+      imageUrl: 'portada.png',
+      imageAlt: 'Descripcion de la imagen',
+      category: 5,
+      qualification: 4.2,
+      comments: 500,
+      price: 80,
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -76,7 +104,13 @@ function Home() {
             <Destination key={destination.id} destination={destination} />
           ))}
         </section>
-        <SectionTitle sectionTitle="Vivencias únicas" />
+        <SectionTitle sectionTitle="Hoteles recomendados" />
+        <section className="px-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {hotelData.map((hotel) => (
+            <HotelCard key={hotel.id} hotel={hotel} />
+          ))}
+        </section>
+        <SectionTitle sectionTitle="Autos recomendados" />
       </main>
     </>
   );
