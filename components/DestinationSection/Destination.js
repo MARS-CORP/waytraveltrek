@@ -1,25 +1,37 @@
-function Destination({ destination }) {
+import DestinationList from './DestinationList';
+
+export default function Destination({ destination }) {
+  const destinationData = [
+    {
+      id: 1,
+      imageUrl: 'portada.png',
+      imageAlr: 'Texto que describe el destino',
+      name: 'La Habana',
+      description:
+        'Lorem ipsum dolor sit amet volutpat aliquyam dignissim veniam elitr facilisis wisi facilisis aliquyam euismod et duo.',
+    },
+    {
+      id: 2,
+      imageUrl: 'portada.png',
+      imageAlr: 'Texto que describe el destino',
+      name: 'Varadero',
+      description:
+        'Lorem ipsum dolor sit amet volutpat aliquyam dignissim veniam elitr facilisis wisi facilisis aliquyam euismod et duo.',
+    },
+    {
+      id: 3,
+      imageUrl: 'portada.png',
+      imageAlr: 'Texto que describe el destino',
+      name: 'Cayo Santa Maria',
+      description:
+        'Lorem ipsum dolor sit amet volutpat aliquyam dignissim veniam elitr facilisis wisi facilisis aliquyam euismod et duo.',
+    },
+  ];
   return (
-    <div className="max-w-xs sm:max-w-md md:max-w-2xl md:max-h-60 lg:max-w-4xl mx-auto bg-slate-50 rounded-xl shadow-md overflow-hidden">
-      <div className="md:flex">
-        <div className="md:shrink-0">
-          <img
-            className="h-48 w-full object-cover md:h-full md:w-48"
-            src={`/img/${destination.imageUrl}`}
-            alt={destination.imageAlt}
-          />
-        </div>
-        <div className="p-8">
-          <h3 className="uppercase tracking-wide text-lg text-indigo-500 font-semibold">
-            {destination.name}
-          </h3>
-          <div className="max-h-36 w-full">
-            <p className="mt-2 text-slate-500">{destination.description}</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <section className="px-2 grid grid-cols-1 lg:grid-cols-2 3xl:grid-cols-3 gap-4">
+      {destinationData.map((destination) => (
+        <DestinationList key={destination.id} destination={destination} />
+      ))}
+    </section>
   );
 }
-
-export default Destination;
