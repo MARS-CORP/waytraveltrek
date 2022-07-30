@@ -1,7 +1,7 @@
 export default function HotelCard({ hotel }) {
   return (
     <div
-      style={{ width: '100%;' }}
+      style={{ width: '100%' }}
       className="max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-6xl mx-auto bg-slate-50 rounded-xl shadow-md overflow-hidden"
     >
       <div className="md:flex">
@@ -14,14 +14,14 @@ export default function HotelCard({ hotel }) {
         </div>
         <div className="p-4 w-full">
           <div className="flex justify-between items-center">
-            <h3 className="text-2xl font-semibold">{hotel.name}</h3>
+            <h3 className="text-2xl font-semibold mr-3">{hotel.name}</h3>
             <div className="bg-gradient-to-tr from-yellow-600 to-orange-400 p-2 rounded-lg">
               <span className="text-xl font-bold">{hotel.qualification}/</span>
               <span className="font-normal text-base">5</span>
             </div>
           </div>
           <div className="mt-2">
-            <p>{hotel.category}*</p>
+            <p>{hotel.category}⭐</p>
           </div>
           <div className="mt-2">
             <span className="text-slate-500">{hotel.comments} comentarios</span>
