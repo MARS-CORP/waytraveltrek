@@ -1,3 +1,5 @@
+import RecommendedCars from '../Cars/RecommendedCars';
+import Cars from '../Cars/RecommendedCars';
 import Destination from '../DestinationSection/Destination';
 import Header from '../HeaderSection/Header';
 import RecommendedHotelList from '../Hotel/RecommendedHotelList';
@@ -18,6 +20,8 @@ function Home() {
         <SectionTitle sectionTitle="Hoteles recomendados" />
         <RecommendedHotelList />
         <SectionTitle sectionTitle="Autos recomendados" />
+        <RecommendedCars />
+        <SectionTitle sectionTitle="Experiencias recomendadas" />
       </main>
     </>
   );
