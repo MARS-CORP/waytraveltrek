@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="grid grid-cols-1 lg:grid-cols-3 border-t border-t-slate-800 mt-20 gap-4 py-10 text-center lg:text-left">
+    <footer className="grid grid-cols-1 lg:grid-cols-3 border-t mt-20 gap-4 py-10 text-center lg:text-left">
       <div className="mx-auto mb-4">
         <img
           src={`/img/logo.png`}

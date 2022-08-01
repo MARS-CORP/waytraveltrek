@@ -1,5 +1,6 @@
 import RecommendedCars from '../Cars/RecommendedCars';
 import Cars from '../Cars/RecommendedCars';
+import Copyright from '../Copyright/Copyright';
 import Destination from '../DestinationSection/Destination';
 import Footer from '../Footer/Footer';
 import Header from '../HeaderSection/Header';
@@ -23,6 +24,7 @@ function Home() {
         <SectionTitle sectionTitle="Autos recomendados" />
         <RecommendedCars />
         <Footer />
+        <Copyright />
       </main>
     </>
   );
