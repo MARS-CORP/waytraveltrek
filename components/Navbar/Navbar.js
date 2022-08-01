@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Navbar() {
   return (
-    <div className="p-6 flex justify-between space-x-4">
+    <div className="p-6 flex justify-between space-x-4 backdrop-blur-lg bg-opacity-30">
       <div>
         <Image
           src="/img/logo.png"
