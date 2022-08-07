@@ -3,6 +3,7 @@ import Copyright from '../Copyright/Copyright';
 import Destination from '../DestinationSection/Destination';
 import Footer from '../Footer/Footer';
 import Header from '../HeaderSection/Header';
+import HeroCenter from '../HeroSection/HeroCenter';
 import HeroToLeft from '../HeroSection/HeroToLeft';
 import HeroToRight from '../HeroSection/HeroToRight';
 import Hero from '../HeroSection/HeroToRight';
@@ -27,6 +28,7 @@ function Home() {
         <HeroToRight title="Un camino por descubrir" />
         <SectionTitle sectionTitle="Autos recomendados" />
         <RecommendedCars />
+        <HeroCenter title="Un camino, mil destinos" />
       </main>
       <Footer />
       <Copyright />
