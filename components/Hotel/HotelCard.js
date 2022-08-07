@@ -1,8 +1,11 @@
+import { Star } from '@mui/icons-material';
+import CommentIcon from '@mui/icons-material/Comment';
+
 export default function HotelCard({ hotel }) {
   return (
     <div
       style={{ width: '100%' }}
-      className="max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-6xl mx-auto bg-slate-50 rounded-xl shadow-md overflow-hidden"
+      className="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-5xl overflow-hidden shadow-md rounded-lg mx-auto"
     >
       <div className="md:flex">
         <div className="md:shrink-0">
@@ -21,10 +24,17 @@ export default function HotelCard({ hotel }) {
             </div>
           </div>
           <div className="mt-2">
-            <p>{hotel.category}⭐</p>
+            <span className="flex items-center">
+              {hotel.category} <Star className="text-yellow-500" />
+            </span>
+          </div>
+          <div className="mt-4">
+            <p>{hotel.description}</p>
           </div>
           <div className="mt-2">
-            <span className="text-slate-500">{hotel.comments} comentarios</span>
+            <span className="text-slate-500 flex items-center gap-2">
+              <CommentIcon /> {hotel.comments} comentarios
+            </span>
           </div>
           <div className="flex flex-col items-end mt-4">
             <span className="text-xl font-semibold text-violet-500">Desde</span>
