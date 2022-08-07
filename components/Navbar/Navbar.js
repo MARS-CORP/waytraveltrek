@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Navbar() {
   return (
@@ -14,10 +15,26 @@ function Navbar() {
       </div>
       <div className="hidden md:block">
         <ul className="md:mt-6  mr-4 max-w-lg text-lg font-medium text-gray-700 cursor-pointer">
-          <li className="inline-block mr-8 hover:text-red-800">Inicio</li>
-          <li className="inline-block mr-8 hover:text-red-800">Hoteles</li>
-          <li className="inline-block mr-8 hover:text-red-800">Autos</li>
-          <li className="inline-block mr-8 hover:text-red-800">Contacto</li>
+          <li className="inline-block mr-8 hover:text-red-800">
+            <Link href="/">
+              <a>Inicio</a>
+            </Link>
+          </li>
+          <li className="inline-block mr-8 hover:text-red-800">
+            <Link href="/hotels">
+              <a>Hoteles</a>
+            </Link>
+          </li>
+          <li className="inline-block mr-8 hover:text-red-800">
+            <Link href="/cars">
+              <a>Autos</a>
+            </Link>
+          </li>
+          <li className="inline-block mr-8 hover:text-red-800">
+            <Link href="/contact">
+              <a>Contacto</a>
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="block md:hidden mt-2">
