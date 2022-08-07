@@ -11,6 +11,8 @@ export default function RecommendedHotelList() {
       qualification: 4.2,
       comments: 500,
       price: 80,
+      description:
+        'Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing. Iriure amet duis et no tempor molestie consetetur gubergren sanctus rebum et gubergren gubergren at elitr consequat ipsum et.',
     },
     {
       id: 2,
@@ -21,6 +23,8 @@ export default function RecommendedHotelList() {
       qualification: 4.2,
       comments: 500,
       price: 80,
+      description:
+        'Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing. Iriure amet duis et no tempor molestie consetetur gubergren sanctus rebum et gubergren gubergren at elitr consequat ipsum et.',
     },
     {
       id: 3,
@@ -31,6 +35,8 @@ export default function RecommendedHotelList() {
       qualification: 4.2,
       comments: 500,
       price: 80,
+      description:
+        'Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing. Iriure amet duis et no tempor molestie consetetur gubergren sanctus rebum et gubergren gubergren at elitr consequat ipsum et.',
     },
   ];
   return (
