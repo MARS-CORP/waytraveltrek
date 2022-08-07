@@ -1,12 +1,22 @@
+import { AcUnit, Luggage, Settings } from '@mui/icons-material';
+import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
+
 function CarCharacteristics(props) {
   return (
     <>
-      <span>{props.char.gear}</span>
-      <span>
+      <span className="flex items-center font-semibold">
+        <Settings /> {props.char.gear}
+      </span>
+      <span className="flex items-center font-semibold">
+        <AcUnit />
         {props.char.air_conditioner && props.char.air_conditioner ? 'A/C' : ''}
       </span>
-      <span>{props.char.bags}💼</span>
-      <span>{props.char.fuel_type}</span>
+      <span className="flex items-center font-semibold">
+        <Luggage /> {props.char.bags}
+      </span>
+      <span className="flex items-center font-semibold">
+        <LocalGasStationIcon /> {props.char.fuel_type}
+      </span>
     </>
   );
 }
