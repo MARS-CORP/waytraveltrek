@@ -26,12 +26,12 @@ function Navbar() {
             </Link>
           </li>
           <li className="inline-block mr-8 hover:text-red-800">
-            <Link href="/cars">
+            <Link href="#">
               <a>Autos</a>
             </Link>
           </li>
           <li className="inline-block mr-8 hover:text-red-800">
-            <Link href="/contact">
+            <Link href="#">
               <a>Contacto</a>
             </Link>
           </li>

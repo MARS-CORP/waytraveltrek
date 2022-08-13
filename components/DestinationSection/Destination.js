@@ -5,7 +5,7 @@ export default function Destination({ destination }) {
     {
       id: 1,
       imageUrl: 'portada.webp',
-      imageAlr: 'Texto que describe el destino',
+      imageAlt: 'Texto que describe el destino',
       name: 'La Habana',
       description:
         'Lorem ipsum dolor sit amet volutpat aliquyam dignissim veniam elitr facilisis wisi facilisis aliquyam euismod et duo.',
@@ -13,7 +13,7 @@ export default function Destination({ destination }) {
     {
       id: 2,
       imageUrl: 'portada.webp',
-      imageAlr: 'Texto que describe el destino',
+      imageAlt: 'Texto que describe el destino',
       name: 'Varadero',
       description:
         'Lorem ipsum dolor sit amet volutpat aliquyam dignissim veniam elitr facilisis wisi facilisis aliquyam euismod et duo.',
@@ -21,7 +21,7 @@ export default function Destination({ destination }) {
     {
       id: 3,
       imageUrl: 'portada.webp',
-      imageAlr: 'Texto que describe el destino',
+      imageAlt: 'Texto que describe el destino',
       name: 'Cayo Santa Maria',
       description:
         'Lorem ipsum dolor sit amet volutpat aliquyam dignissim veniam elitr facilisis wisi facilisis aliquyam euismod et duo.',
