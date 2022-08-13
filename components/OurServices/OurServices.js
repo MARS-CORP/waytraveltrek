@@ -4,19 +4,19 @@ export default function OurServices() {
   const data = [
     {
       id: 1,
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlt: 'Texto de descripcion de imagen',
       serviceName: 'Hoteles',
     },
     {
       id: 2,
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlt: 'Texto de descripcion de imagen',
       serviceName: 'Autos de Renta',
     },
     {
       id: 3,
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlt: 'Texto de descripcion de imagen',
       serviceName: 'Casas de Renta',
     },

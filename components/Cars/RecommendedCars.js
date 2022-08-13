@@ -5,7 +5,7 @@ function RecommendedCars() {
     {
       id: 1,
       name: 'Peugeot 301',
-      imageUrl: '301.jpg',
+      imageUrl: '301.webp',
       imageAlt: 'image description',
       category: 'Medio',
       description:
@@ -24,7 +24,7 @@ function RecommendedCars() {
     {
       id: 2,
       name: 'Peugeot 301',
-      imageUrl: '301.jpg',
+      imageUrl: '301.webp',
       imageAlt: 'image description',
       category: 'Medio',
       description:
@@ -43,7 +43,7 @@ function RecommendedCars() {
     {
       id: 3,
       name: 'Peugeot 301',
-      imageUrl: '301.jpg',
+      imageUrl: '301.webp',
       imageAlt: 'image description',
       category: 'Medio',
       description:

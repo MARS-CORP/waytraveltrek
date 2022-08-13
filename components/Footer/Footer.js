@@ -1,13 +1,17 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 function Footer() {
   return (
     <footer className="grid grid-cols-1 lg:grid-cols-3 border-t mt-20 gap-4 py-10 text-center lg:text-left">
       <div className="mx-auto mb-4">
-        <img
-          src={`/img/logo.png`}
-          alt="Image logo"
-          className="w-full max-h-32 object-cover"
+        <Image
+          src={`/img/logo.webp`}
+          alt="Imagen del logo"
+          width={250}
+          height={150}
+          layout="fixed"
+          className="object-cover"
         />
       </div>
       <div className="mx-auto mb-4">
@@ -30,32 +34,44 @@ function Footer() {
         <ul className="text-slate-500">
           <li className="inline-block">
             <Link href="/contact">
-              <img
-                src="/img/email.png"
-                alt="Email icon"
-                className="w-12 h-12"
+              <Image
+                src={`/img/email.webp`}
+                alt="email icon"
+                width={48}
+                height={48}
               />
             </Link>
           </li>
-          <a href="#">
-            <li className="inline-block ml-4">
-              <img src="/img/fb.png" alt="Email icon" className="w-12 h-12" />
-            </li>
-          </a>
-          <a href="#">
-            <li className="inline-block ml-4">
-              <img
-                src="/img/insta.png"
-                alt="Email icon"
-                className="w-12 h-12"
+          <li className="inline-block ml-4">
+            <Link href="/contact">
+              <Image
+                src={`/img/fb.webp`}
+                alt="facebook icon"
+                width={48}
+                height={48}
               />
-            </li>
-          </a>
-          <a href="#">
-            <li className="inline-block ml-4">
-              <img src="/img/tw.png" alt="Email icon" className="w-12 h-12" />
-            </li>
-          </a>
+            </Link>
+          </li>
+          <li className="inline-block ml-4">
+            <Link href="/contact">
+              <Image
+                src={`/img/insta.webp`}
+                alt="instagram icon"
+                width={48}
+                height={48}
+              />
+            </Link>
+          </li>
+          <li className="inline-block ml-4">
+            <Link href="/contact">
+              <Image
+                src={`/img/tw.webp`}
+                alt="twitter icon"
+                width={48}
+                height={48}
+              />
+            </Link>
+          </li>
         </ul>
       </div>
     </footer>

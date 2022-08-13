@@ -13,7 +13,7 @@ function HeroToRight(props) {
           </p>
         </div>
         <img
-          src="/img/faro.jpg"
+          src="/img/faro.webp"
           alt="Image description"
           className="w-full max-h-96 object-cover object-bottom lg:rounded-lg mx-auto"
         />

@@ -3,7 +3,7 @@ function HeroToLeft(props) {
     <div className="my-40">
       <div className="relative h-96 flex justify-center items-center lg:grid lg:grid-cols-3 overflow-hidden">
         <img
-          src="/img/playa.jpg"
+          src="/img/playa.webp"
           alt="Image description"
           className="w-full max-h-96 object-cover object-bottom lg:rounded-lg mx-auto lg:col-span-2"
         />

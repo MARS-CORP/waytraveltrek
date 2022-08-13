@@ -6,7 +6,7 @@ function Navbar() {
     <div className="p-6 flex justify-between space-x-4 backdrop-blur-lg bg-opacity-30">
       <div>
         <Image
-          src="/img/logo.png"
+          src="/img/logo.webp"
           alt="Waytraveltek logo"
           width={120}
           height={70}
@@ -38,7 +38,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="block md:hidden mt-2">
-        <Image src="/img/menu.png" alt="Menu icon" width={50} height={50} />
+        <Image src="/img/menu.webp" alt="Menu icon" width={50} height={50} />
       </div>
     </div>
   );

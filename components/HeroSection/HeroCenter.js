@@ -4,7 +4,7 @@ function HeroCenter(props) {
       <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-3 overflow-hidden">
         <div className="w-full h-96">
           <img
-            src="/img/playa.jpg"
+            src="/img/playa.webp"
             alt="Image description"
             className="w-full max-h-96 object-cover object-bottom lg:rounded-lg mx-auto lg:col-span-2"
           />
@@ -16,7 +16,7 @@ function HeroCenter(props) {
         </div>
         <div className="w-full h-96">
           <img
-            src="/img/faro.jpg"
+            src="/img/faro.webp"
             alt="Image description"
             className="w-full max-h-96 object-cover object-bottom lg:rounded-lg mx-auto lg:col-span-2"
           />

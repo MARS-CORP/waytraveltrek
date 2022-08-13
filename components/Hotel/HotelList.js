@@ -5,7 +5,7 @@ function HotelList(props) {
     {
       id: 1,
       name: 'Habana libre',
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlt: 'Descripcion de la imagen',
       category: 5,
       qualification: 4.2,
@@ -17,7 +17,7 @@ function HotelList(props) {
     {
       id: 2,
       name: 'Melia Inernacional Varadero',
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlt: 'Descripcion de la imagen',
       category: 5,
       qualification: 4.2,
@@ -29,7 +29,7 @@ function HotelList(props) {
     {
       id: 3,
       name: 'Blue Diamond Prado y Malecón',
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlt: 'Descripcion de la imagen',
       category: 5,
       qualification: 4.2,

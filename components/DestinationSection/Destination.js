@@ -4,7 +4,7 @@ export default function Destination({ destination }) {
   const destinationData = [
     {
       id: 1,
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlr: 'Texto que describe el destino',
       name: 'La Habana',
       description:
@@ -12,7 +12,7 @@ export default function Destination({ destination }) {
     },
     {
       id: 2,
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlr: 'Texto que describe el destino',
       name: 'Varadero',
       description:
@@ -20,7 +20,7 @@ export default function Destination({ destination }) {
     },
     {
       id: 3,
-      imageUrl: 'portada.png',
+      imageUrl: 'portada.webp',
       imageAlr: 'Texto que describe el destino',
       name: 'Cayo Santa Maria',
       description:
