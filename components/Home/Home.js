@@ -12,7 +12,8 @@ import Navbar from '../Navbar/Navbar';
 import OurServices from '../OurServices/OurServices';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
-function Home() {
+function Home({ destinations }) {
+  console.log(destinations);
   return (
     <>
       <Navbar />

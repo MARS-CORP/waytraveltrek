@@ -1,6 +1,6 @@
 import DestinationList from './DestinationList';
 
-export default function Destination({ destination }) {
+export default function Destination() {
   const destinationData = [
     {
       id: 1,

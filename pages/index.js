@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Home from '../components/Home/Home';
 
-export default function App() {
+export default function App({ destinations }) {
+  console.log(destinations);
   return (
     <>
       <Head>
@@ -13,4 +14,17 @@ export default function App() {
       <Home />
     </>
   );
+}
+
+export async function loadDestinations() {
+  const res = await fetch('http://localhost:8080/api/v1/destinations');
+  const data = await res.json();
+
+  return data;
+}
+
+export async function getStaticProps() {
+  const destinations = await loadDestinations();
+
+  return { props: { destinations } };
 }
