@@ -23,7 +23,7 @@ function RecommendedCars() {
     },
     {
       id: 2,
-      name: 'Peugeot 301',
+      name: 'Hyundai Accent',
       imageUrl: '301.webp',
       imageAlt: 'image description',
       category: 'Medio',
@@ -42,7 +42,7 @@ function RecommendedCars() {
     },
     {
       id: 3,
-      name: 'Peugeot 301',
+      name: 'Hyubndai Elantra',
       imageUrl: '301.webp',
       imageAlt: 'image description',
       category: 'Medio',

@@ -10,6 +10,7 @@ import Hero from '../HeroSection/HeroToRight';
 import RecommendedHotelList from '../Hotel/RecommendedHotelList';
 import Navbar from '../Navbar/Navbar';
 import OurServices from '../OurServices/OurServices';
+import AcceptedPayments from '../Payment/AcceptedPayments';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
 function Home({ destinations }) {
@@ -29,7 +30,9 @@ function Home({ destinations }) {
         <HeroToRight title="Un camino por descubrir" />
         <SectionTitle sectionTitle="Autos recomendados" />
         <RecommendedCars />
-        <HeroCenter title="Un camino, mil destinos" />
+        {/* <HeroCenter title="Un camino, mil destinos" /> */}
+        <SectionTitle sectionTitle="M&eacute;todos de pago aceptados" />
+        <AcceptedPayments />
       </main>
       <Footer />
       <Copyright />

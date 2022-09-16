@@ -23,7 +23,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="flex justify-items-center overflow-x-scroll lg:overflow-auto px-2 md:grid md:grid-cols-3 gap-8">
+    <section className="flex justify-items-center overflow-x-scroll lg:overflow-auto px-2 lg:grid lg:grid-cols-3 gap-8">
       {data.map((item) => (
         <Services key={item.id} item={item} />
       ))}

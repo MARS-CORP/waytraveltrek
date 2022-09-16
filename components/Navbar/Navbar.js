@@ -4,12 +4,12 @@ import Link from 'next/link';
 function Navbar() {
   return (
     <div className="p-6 flex justify-between space-x-4 backdrop-blur-lg bg-opacity-30">
-      <div>
+      <div className="relative h-16 w-24 md:h-20 md:w-32">
         <Image
           src="/img/logo.webp"
           alt="Waytraveltek logo"
-          width={120}
-          height={70}
+          layout="fill"
+          objectFit="cover"
           priority
         />
       </div>
@@ -38,7 +38,14 @@ function Navbar() {
         </ul>
       </div>
       <div className="block md:hidden mt-2">
-        <Image src="/img/menu.webp" alt="Menu icon" width={50} height={50} />
+        <div className="relative w-10 h-10">
+          <Image
+            src="/img/menu.webp"
+            alt="Menu icon"
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
       </div>
     </div>
   );
