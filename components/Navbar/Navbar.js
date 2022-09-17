@@ -31,7 +31,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="inline-block mr-8 hover:text-red-800">
-            <Link href="#">
+            <Link href="/contact">
               <a>Contacto</a>
             </Link>
           </li>
