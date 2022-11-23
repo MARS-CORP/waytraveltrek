@@ -30,8 +30,34 @@ export default function ContactForm() {
   }
 
   return (
-    <div>
-      <h1>Contacto</h1>
+    <div className="p-4">
+      <h1 className="text-center text-2xl font-bold mb-10">Contacto</h1>
+      <div className="text-center mb-20">
+        <p>
+          Lorem ipsum dolor sit amet rebum sadipscing dolore. Labore et rebum
+          vero diam dolor labore liber liber est kasd elitr duis. Eirmod ex
+          lorem eos nulla et consetetur aliquyam lorem. Et nonumy dolor. Elitr
+          lorem enim vero accumsan diam volutpat rebum eum laoreet gubergren et
+          consequat amet ipsum eos et ad. Esse magna gubergren placerat diam
+          illum kasd dolor lorem sit eos ut ut et consetetur enim odio. Tempor
+          justo takimata at eos lobortis rebum volutpat dolore ea. Dolor
+          consequat lorem kasd dolor takimata luptatum. Vero ut ad voluptua
+          praesent sit et ipsum sea eros in duis gubergren sit. Rebum no diam
+          vulputate vulputate. Voluptua rebum autem tempor. Esse est vel vero
+          nulla tempor stet clita augue rebum vero voluptua no aliquyam.
+          Lobortis sanctus no sea molestie at aliquyam et nostrud sit sanctus
+          duo ipsum sadipscing ut consetetur duo accusam dolor. Vel dolor ipsum
+          gubergren dolor sit dolor takimata placerat. Labore takimata iriure
+          velit ipsum justo est molestie odio stet sadipscing hendrerit
+          consetetur. Labore justo sit et kasd justo sanctus suscipit clita
+          ullamcorper labore dolor. Tation lorem eu sadipscing eos consetetur
+          et. Et placerat clita consetetur consectetuer aliquyam. Blandit labore
+          et dolor sea aliquyam amet ut dolore sed sit iusto consectetuer. Amet
+          nonumy ipsum sit labore clita molestie nonumy dolor. Erat diam ut
+          hendrerit dolor esse at imperdiet autem facilisis dolor. Ut tempor
+          sadipscing est minim.
+        </p>
+      </div>
       <div className="h-full flex justify-center items-center">
         <div className="bg-white rounded shadow-lg w-full lg:grid lg:grid-cols-3 mx-10 p-8">
           <div className="w-full h-full hidden lg:flex lg:justify-center lg:items-center border-r-2">
@@ -39,6 +65,7 @@ export default function ContactForm() {
               <Image
                 src={'/img/logo.webp'}
                 alt="Logo del sitio web"
+                className="z-10"
                 layout="fill"
                 objectFit="cover"
                 placeholder="blur"
@@ -48,7 +75,7 @@ export default function ContactForm() {
           </div>
           <form
             onSubmit={handleSubmit}
-            className="w-full h-full lg:col-span-2 flex justify-center items-center py-6 px-10"
+            className="w-full h-full lg:col-span-2 flex justify-center items-center p-2 sm:py-6 sm:px-10"
           >
             <div className="mx-auto">
               <h2 className="text-center text-2xl lg:text-3xl xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500 mb-8">
@@ -94,7 +121,7 @@ export default function ContactForm() {
                     value={contact.email}
                   />
                 </div>
-                <div className="flex flex-col justify-center col-span-1 lg:col-span-1">
+                <div className="flex flex-col justify-center col-span-2 sm:col-span-1">
                   <label htmlFor="phoneNumber" className="font-semibold">
                     Tel&eacute;fono
                   </label>
@@ -158,6 +185,18 @@ export default function ContactForm() {
               </div>
             </div>
           </form>
+        </div>
+      </div>
+
+      <div className="my-20">
+        <h2 className="text-center font-bold text-2xl mb-16">
+          Mantente conectado
+        </h2>
+        <div className="flex justify-evenly items-center">
+          <div className="relative w-20 h-20 bg-slate-900 rounded-xl backdrop-blur-md bg-opacity-50"></div>
+          <div className="relative w-20 h-20 bg-slate-900 rounded-xl backdrop-blur-md bg-opacity-50"></div>
+          <div className="relative w-20 h-20 bg-slate-900 rounded-xl backdrop-blur-md bg-opacity-50"></div>
+          <div className="relative w-20 h-20 bg-slate-900 rounded-xl backdrop-blur-md bg-opacity-50"></div>
         </div>
       </div>
     </div>
