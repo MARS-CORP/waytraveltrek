@@ -17,7 +17,6 @@ function Home({ destinations }) {
   console.log(destinations);
   return (
     <>
-      <Navbar />
       <Header />
       <main>
         <SectionTitle sectionTitle="Nuestros servicios" />

@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Home from '../components/Home/Home';
 
 export default function App({ destinations }) {
-  console.log(destinations);
   return (
     <>
       <Head>
