@@ -48,15 +48,15 @@ function Navbar() {
         <div className="md:hidden">
           <button onClick={handleToggleMenu} className="block">
             {toggleMenu ? (
-              <Close className="cursor-pointer h-10 w-10" />
+              <Close className="cursor-pointer h-10 w-10 animate__animated animate__rollIn" />
             ) : (
-              <Segment className="cursor-pointer h-10 w-10" />
+              <Segment className="cursor-pointer h-10 w-10 animate__animated animate__rotateInDownLeft" />
             )}
           </button>
         </div>
 
         <div
-          className={`backdrop-blur-sm bg-white/90 w-40 min-h-screen absolute top-20 right-0 md:hidden ${
+          className={`backdrop-blur-sm bg-white/90 w-64 min-h-screen absolute top-20 right-0 md:hidden ${
             toggleMenu
               ? "animate__animated animate__slideInRight"
               : "animate__animated animate__slideOutRight"

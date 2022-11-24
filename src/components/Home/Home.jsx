@@ -1,7 +1,5 @@
 import RecommendedCars from "../Cars/RecommendedCars";
-import Copyright from "../Copyright/Copyright";
-import Destination from "../DestinationSection/Destination";
-import Footer from "../Footer/Footer";
+import { Destination } from "@components/DestinationSection/Destination";
 import { Header } from "@components/HeaderSection/Header";
 import HeroCenter from "../HeroSection/HeroCenter";
 import HeroToLeft from "../HeroSection/HeroToLeft";
@@ -9,7 +7,7 @@ import HeroToRight from "../HeroSection/HeroToRight";
 import Hero from "../HeroSection/HeroToRight";
 import RecommendedHotelList from "../Hotel/RecommendedHotelList";
 import Navbar from "../Navbar/Navbar";
-import OurServices from "../OurServices/OurServices";
+import { OurServices } from "@components/OurServices/OurServices";
 import AcceptedPayments from "../Payment/AcceptedPayments";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
@@ -33,8 +31,6 @@ const Home = ({ destinations }) => {
         <SectionTitle sectionTitle="M&eacute;todos de pago aceptados" />
         <AcceptedPayments />
       </main>
-      <Footer />
-      <Copyright />
     </>
   );
 };

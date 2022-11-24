@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import HotelPage from '../../components/Hotel/HotelPage';
+import { HotelPage } from '@components/Hotel/HotelPage';
 
 export default function Hotels() {
   return (
