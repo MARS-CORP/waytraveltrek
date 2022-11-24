@@ -33,7 +33,7 @@ function Navbar() {
         <ul className="hidden list-none md:flex md:items-center md:justify-center gap-4">
           {navbarItems.map((item) => (
             <li
-              className={`font-bold tracking-wide px-3 py-1 rounded-full hover:bg-yellow-300 ${
+              className={`font-bold tracking-wide px-3 py-1 rounded-full hover:ring hover:ring-offset-2 hover:ring-yellow-500 hover:ring-offset-white/90 ${
                 router.asPath === item.url ? activeNavLinkDesktop : ""
               }`}
               key={item.id}
@@ -56,7 +56,7 @@ function Navbar() {
         </div>
 
         <div
-          className={`backdrop-blur-sm bg-white/90 w-40 min-h-screen absolute top-20 right-0 ${
+          className={`backdrop-blur-sm bg-white/90 w-40 min-h-screen absolute top-20 right-0 md:hidden ${
             toggleMenu
               ? "animate__animated animate__slideInRight"
               : "animate__animated animate__slideOutRight"
