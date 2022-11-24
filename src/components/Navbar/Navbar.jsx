@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { Close, Segment } from "@mui/icons-material";
 import { useState } from "react";
 
-function Navbar() {
+const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const router = useRouter();
   const activeNavLinkDesktop =
@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="p-2 fixed top-0 w-full max-h-20 z-50 backdrop-blur-sm bg-white/90">
+    <nav className="p-2 fixed top-0 w-full max-h-20 z-50 backdrop-blur-sm bg-white/90 shadow-md">
       <div className="flex justify-between items-center h-full">
         <Link href={"/"}>
           <a>
@@ -56,7 +56,7 @@ function Navbar() {
         </div>
 
         <div
-          className={`backdrop-blur-sm bg-white/90 w-64 min-h-screen absolute top-20 right-0 md:hidden ${
+          className={`backdrop-blur-sm bg-white/90 w-64 min-h-screen absolute top-20 right-0 md:hidden shadow-md ${
             toggleMenu
               ? "animate__animated animate__slideInRight"
               : "animate__animated animate__slideOutRight"
@@ -82,6 +82,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
-export default Navbar;
+export { Navbar };

@@ -1,4 +1,4 @@
-function Copyright() {
+const Copyright = () => {
   let date = new Date();
   let year = date.getFullYear();
 
@@ -10,6 +10,6 @@ function Copyright() {
       </p>
     </div>
   );
-}
+};
 
-export default Copyright;
+export { Copyright };
