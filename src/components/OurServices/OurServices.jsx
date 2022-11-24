@@ -24,7 +24,7 @@ const OurServices = () => {
 
   return (
     <section className="">
-      <div className="snap-x mx-auto snap-mandatory w-full overflow-scroll flex px-6 gap-6">
+      <div className="snap-x mx-auto snap-mandatory w-full overflow-x-scroll flex px-6 gap-6">
         {data.map((item) => (
           <Services key={item.id} item={item} />
         ))}

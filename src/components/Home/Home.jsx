@@ -1,13 +1,13 @@
-import RecommendedCars from "../Cars/RecommendedCars";
-import { Destination } from "@components/DestinationSection/Destination";
 import { Header } from "@components/HeaderSection/Header";
+import { OurServices } from "@components/OurServices/OurServices";
+import { Destination } from "@components/DestinationSection/Destination";
+import { RecommendedHotelList } from "@components/Hotel/RecommendedHotelList";
+import { RecommendedCars } from "@components/Cars/RecommendedCars";
 import HeroCenter from "../HeroSection/HeroCenter";
 import HeroToLeft from "../HeroSection/HeroToLeft";
 import HeroToRight from "../HeroSection/HeroToRight";
 import Hero from "../HeroSection/HeroToRight";
-import RecommendedHotelList from "../Hotel/RecommendedHotelList";
 import Navbar from "../Navbar/Navbar";
-import { OurServices } from "@components/OurServices/OurServices";
 import AcceptedPayments from "../Payment/AcceptedPayments";
 import SectionTitle from "../SectionTitle/SectionTitle";
 

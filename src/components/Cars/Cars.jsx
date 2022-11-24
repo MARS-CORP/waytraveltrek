@@ -1,22 +1,23 @@
-import CarCategoryBox from './CarCategoryBox';
-import CarCharacteristics from './CarCharacteristics';
-import CarReviewSection from './CarReviewSection';
-import CarDescription from './CarDescription';
-import CarName from './CarName';
-import CarPrice from './CarPrice';
-import Image from 'next/image';
+import { CarName } from "@components/Cars/CarName";
+import { CarCharacteristics } from "@components/Cars/CarCharacteristics";
+import { CarDescription } from "@components/Cars/CarDescription";
+import { CarReviewSection } from "@components/Cars/CarReviewSection";
+import { CarPrice } from "@components/Cars/CarPrice";
+import { CarCategoryBox } from "@components/Cars/CarCategoryBox";
+import Image from "next/image";
 
 function Cars({ car }) {
   return (
     <div className="relative max-w-md sm:max-w-lg md:max-w-2xl overflow-hidden shadow-md rounded-lg mx-auto">
       <div className="md:flex">
         <div className="md:shrink-0">
-          <div className="relative w-full h-48 md:h-full md:w-48 ">
+          <div className="relative w-full h-48 md:h-full md:w-48">
             <Image
               src={`/img/${car.imageUrl}`}
               alt={car.imageAlt}
               layout="fill"
               objectFit="cover"
+              className="brightness-90 transition duration-700 hover:brightness-50 hover:scale-110"
             />
           </div>
         </div>

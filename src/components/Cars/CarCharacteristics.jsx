@@ -1,7 +1,7 @@
-import { AcUnit, Luggage, Settings } from '@mui/icons-material';
-import LocalGasStationIcon from '@mui/icons-material/LocalGasStation';
+import { AcUnit, Luggage, Settings } from "@mui/icons-material";
+import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
 
-function CarCharacteristics(props) {
+const CarCharacteristics = (props) => {
   return (
     <>
       <span className="flex items-center font-semibold">
@@ -9,7 +9,7 @@ function CarCharacteristics(props) {
       </span>
       <span className="flex items-center font-semibold">
         <AcUnit />
-        {props.char.air_conditioner && props.char.air_conditioner ? 'A/C' : ''}
+        {props.char.air_conditioner && props.char.air_conditioner ? "A/C" : ""}
       </span>
       <span className="flex items-center font-semibold">
         <Luggage /> {props.char.bags}
@@ -19,6 +19,6 @@ function CarCharacteristics(props) {
       </span>
     </>
   );
-}
+};
 
-export default CarCharacteristics;
+export { CarCharacteristics };

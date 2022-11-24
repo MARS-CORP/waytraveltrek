@@ -1,6 +1,6 @@
 import SearchHotelForm from "../SearchForm/SearchHotelForm";
-import HotelHeader from "./HotelHeader";
-import HotelList from "./HotelList";
+import { HotelHeader } from "@components/Hotel/HotelHeader";
+import HotelList from "@components/Hotel/HotelList";
 
 const HotelPage = () => {
   return (

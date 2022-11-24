@@ -50,7 +50,7 @@ function Navbar() {
             {toggleMenu ? (
               <Close className="cursor-pointer h-10 w-10 animate__animated animate__rollIn" />
             ) : (
-              <Segment className="cursor-pointer h-10 w-10 animate__animated animate__rotateInDownLeft" />
+              <Segment className="cursor-pointer h-10 w-10 animate__animated animate__rollIn" />
             )}
           </button>
         </div>

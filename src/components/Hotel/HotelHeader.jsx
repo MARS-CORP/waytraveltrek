@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-function HotelHeader(props) {
+const HotelHeader = (props) => {
   return (
     <div className="text-center">
       <img
@@ -10,6 +10,6 @@ function HotelHeader(props) {
       />
     </div>
   );
-}
+};
 
-export default HotelHeader;
+export { HotelHeader };

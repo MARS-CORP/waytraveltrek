@@ -1,11 +1,11 @@
-import { Star } from '@mui/icons-material';
-import CommentIcon from '@mui/icons-material/Comment';
-import Image from 'next/image';
+import { Star } from "@mui/icons-material";
+import CommentIcon from "@mui/icons-material/Comment";
+import Image from "next/image";
 
-export default function HotelCard({ hotel }) {
+const HotelCard = ({ hotel }) => {
   return (
     <div
-      style={{ width: '100%' }}
+      style={{ width: "100%" }}
       className="max-w-md sm:max-w-lg md:max-w-3xl lg:max-w-5xl overflow-hidden shadow-md rounded-lg mx-auto"
     >
       <div className="md:flex">
@@ -52,4 +52,6 @@ export default function HotelCard({ hotel }) {
       </div>
     </div>
   );
-}
+};
+
+export { HotelCard };

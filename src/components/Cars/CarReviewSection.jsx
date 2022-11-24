@@ -1,6 +1,6 @@
-import CommentIcon from '@mui/icons-material/Comment';
+import CommentIcon from "@mui/icons-material/Comment";
 
-function CarReviewSection(props) {
+const CarReviewSection = (props) => {
   return (
     <div className="mt-4">
       <span className="text-slate-900 font-semibold">
@@ -8,6 +8,6 @@ function CarReviewSection(props) {
       </span>
     </div>
   );
-}
+};
 
-export default CarReviewSection;
+export { CarReviewSection };
