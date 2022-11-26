@@ -1,9 +1,9 @@
 import { Remove, Star } from "@mui/icons-material";
 import React from "react";
 
-const FilterHotelsDesktop = () => {
+const FilterHotelsMobile = () => {
   return (
-    <aside className="hidden md:block md:col-span-1 w-full my-20 rounded-lg bg-slate-50 shadow-md p-4">
+    <div className="absolute top-0 left-0 bottom-0 right-0 w-full h-screen rounded-lg bg-slate-50 shadow-md p-4 z-40 animate__animated animate__fadeInDownBig">
       <div className="border-b-2 border-b-slate-500 py-2">
         <h3 className="font-semibold tracking-wider uppercase text-center">
           Filtros
@@ -147,8 +147,8 @@ const FilterHotelsDesktop = () => {
           </div>
         </div>
       </form>
-    </aside>
+    </div>
   );
 };
 
-export { FilterHotelsDesktop };
+export { FilterHotelsMobile };

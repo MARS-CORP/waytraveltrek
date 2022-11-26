@@ -6,6 +6,7 @@ export default function Document() {
       <Head />
       <body>
         <Main />
+        <section id="modalFilterAndSortHotel"></section>
         <NextScript />
       </body>
     </Html>
