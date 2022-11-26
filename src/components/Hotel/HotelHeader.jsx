@@ -2,13 +2,16 @@ import Image from "next/image";
 
 const HotelHeader = (props) => {
   return (
-    <div className="text-center">
-      <img
-        src={`/img/${props.imageLink}`}
-        alt={props.imageAlt}
-        className="w-full max-h-80 object-cover"
-      />
-    </div>
+    <header className="text-center w-full h-screen">
+      <div className="relative w-full h-full">
+        <Image
+          src={`/img/${props.imageLink}`}
+          alt={props.imageAlt}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </header>
   );
 };
 

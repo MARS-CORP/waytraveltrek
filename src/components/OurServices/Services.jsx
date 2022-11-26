@@ -3,7 +3,7 @@ import Image from "next/image";
 function Services({ item }) {
   return (
     <div className="relative max-w-xs md:max-w-lg max-h-80 rounded-xl shadow-lg shrink-0 overflow-hidden cursor-pointer">
-      <div className="relative h-60 w-80">
+      <div className="relative h-60 w-80 md:w-full">
         <Image
           src={`/img/${item.imageUrl}`}
           alt={item.imageAlt}

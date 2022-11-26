@@ -1,4 +1,5 @@
 import { HotelCard } from "@components/Hotel/HotelCard";
+import Link from "next/link";
 
 const HotelList = (props) => {
   const hotelData = [
@@ -12,7 +13,7 @@ const HotelList = (props) => {
       comments: 500,
       price: 80,
       description:
-        "Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing. Iriure amet duis et no tempor molestie consetetur gubergren sanctus rebum et gubergren gubergren at elitr consequat ipsum et.",
+        "Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing.",
     },
     {
       id: 2,
@@ -24,7 +25,7 @@ const HotelList = (props) => {
       comments: 500,
       price: 80,
       description:
-        "Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing. Iriure amet duis et no tempor molestie consetetur gubergren sanctus rebum et gubergren gubergren at elitr consequat ipsum et.",
+        "Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing.",
     },
     {
       id: 3,
@@ -36,13 +37,17 @@ const HotelList = (props) => {
       comments: 500,
       price: 80,
       description:
-        "Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing. Iriure amet duis et no tempor molestie consetetur gubergren sanctus rebum et gubergren gubergren at elitr consequat ipsum et.",
+        "Lorem ipsum dolor sit amet consetetur tempor lobortis clita et. Invidunt nostrud commodo duo sadipscing.",
     },
   ];
   return (
-    <section className="px-2 grid grid-cols-1 gap-8 my-40">
+    <section className="px-2 grid grid-cols-1 gap-8 my-20 md:col-span-2">
       {hotelData.map((hotel) => (
-        <HotelCard key={hotel.id} hotel={hotel} />
+        <Link href={"#"} key={hotel.id}>
+          <a>
+            <HotelCard hotel={hotel} />
+          </a>
+        </Link>
       ))}
     </section>
   );
