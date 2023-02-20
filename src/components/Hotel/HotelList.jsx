@@ -1,7 +1,7 @@
 import { HotelCard } from "@components/Hotel/HotelCard";
 import Link from "next/link";
 
-const HotelList = (props) => {
+const HotelList = ({ hotels }) => {
   const hotelData = [
     {
       id: 1,
@@ -45,7 +45,7 @@ const HotelList = (props) => {
       {hotelData.map((hotel) => (
         <Link href={"#"} key={hotel.id}>
           <a>
-            <HotelCard hotel={hotel} />
+            <HotelCard hotel={hotels} />
           </a>
         </Link>
       ))}

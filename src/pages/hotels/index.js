@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import { HotelPage } from '@components/Hotel/HotelPage';
 
-export default function Hotels() {
+export default function Hotels({ hotels }) {
+  console.log(hotels);
   return (
     <>
       <Head>
@@ -12,7 +13,26 @@ export default function Hotels() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HotelPage />
+      <HotelPage hotels={hotels} />
     </>
   );
+}
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch(`${process.env.ENDPOINT_API}/hotels`);
+    const hotels = await res.json();
+
+    return {
+      props: {
+        hotels,
+      },
+      revalidate: 60,
+    };
+  } catch (error) {
+    console.log(error);
+    return {
+      notFound: true,
+    };
+  }
 }
