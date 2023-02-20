@@ -42,13 +42,34 @@ const RecommendedHotelList = () => {
   ];
   return (
     <section className="px-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
-      {hotelData.map((hotel) => (
-        <Link href={"#"} key={hotel.id}>
-          <a>
-            <HotelCard hotel={hotel} />
-          </a>
-        </Link>
-      ))}
+      {hotelData.map(
+        ({
+          id,
+          name,
+          imageUrl,
+          imageAlt,
+          category,
+          qualification,
+          comments,
+          price,
+          description,
+        }) => (
+          <Link href={"#"} key={id}>
+            <a>
+              <HotelCard
+                name={name}
+                imageUrl={imageUrl}
+                imageAlt={imageAlt}
+                category={category}
+                qualification={qualification}
+                comments={comments}
+                price={price}
+                description={description}
+              />
+            </a>
+          </Link>
+        )
+      )}
     </section>
   );
 };

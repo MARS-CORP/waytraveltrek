@@ -1,7 +1,7 @@
 import { HotelCard } from "@components/Hotel/HotelCard";
 import Link from "next/link";
 
-const HotelList = ({ hotels }) => {
+const HotelList = () => {
   const hotelData = [
     {
       id: 1,
@@ -42,13 +42,35 @@ const HotelList = ({ hotels }) => {
   ];
   return (
     <section className="px-2 grid grid-cols-1 gap-8 my-20 md:col-span-2">
-      {hotelData.map((hotel) => (
-        <Link href={"#"} key={hotel.id}>
-          <a>
-            <HotelCard hotel={hotels} />
-          </a>
-        </Link>
-      ))}
+      {hotelData?.map(
+        ({
+          id,
+          name,
+          imageUrl,
+          imageAlt,
+          category,
+          qualification,
+          comments,
+          price,
+          description,
+        }) => (
+          <Link href={"#"} key={id}>
+            <a>
+              <HotelCard
+                id={id}
+                name={name}
+                imageUrl={imageUrl}
+                imageAlt={imageAlt}
+                category={category}
+                qualification={qualification}
+                comments={comments}
+                price={price}
+                description={description}
+              />
+            </a>
+          </Link>
+        )
+      )}
     </section>
   );
 };

@@ -11,12 +11,11 @@ import Hero from "../HeroSection/HeroToRight";
 import Navbar from "../Navbar/Navbar";
 import { SectionTitle } from "@components/SectionTitle/SectionTitle";
 
-const Home = ({ destinations }) => {
-  console.log(destinations);
+const Home = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="max-w-screen-2xl mx-auto">
         <SectionTitle sectionTitle="Nuestros servicios" />
         <OurServices />
         <SectionTitle sectionTitle="Destinos inolvidables" />
