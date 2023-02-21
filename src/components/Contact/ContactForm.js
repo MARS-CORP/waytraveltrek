@@ -25,8 +25,8 @@ export default function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('Formulario enviado');
-    console.log(contact);
+    // console.log('Formulario enviado');
+    // console.log(contact);
   }
 
   return (

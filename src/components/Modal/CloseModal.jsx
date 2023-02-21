@@ -3,7 +3,7 @@ import { Close } from "@mui/icons-material";
 
 const CloseModal = ({ setMounted }) => {
   const handleClose = () => {
-    setMounted((prevState) => (prevState = false));
+    setMounted(false);
   };
 
   return (

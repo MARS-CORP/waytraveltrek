@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
@@ -19,7 +20,7 @@ import {
   WifiOutlined,
 } from "@mui/icons-material";
 import { DateRange, DateRangePicker } from "react-date-range";
-import { format } from "date-fns";
+// import { format } from "date-fns";
 
 const HotelDetails = () => {
   const [bookingForm, setBookingForm] = useState({
@@ -38,9 +39,9 @@ const HotelDetails = () => {
   const [children, setChildren] = useState(0);
   const [babies, setBabies] = useState(0);
 
-  const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
-  const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
-  const range = `${formattedEndDate} - ${formattedStartDate}`;
+  // const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
+  // const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
+  // const range = `${formattedEndDate} - ${formattedStartDate}`;
 
   const ranges = {
     startDate: startDate,
@@ -62,7 +63,7 @@ const HotelDetails = () => {
     setEndDate(ranges.selection.endDate);
   };
 
-  const handleInputDateRange = (e) => {
+  const handleInputDateRange = () => {
     // const { value } = e.target;
     // setInputDateRange((prevState) => (prevState = value));
     setInputDateRange(true);
@@ -70,7 +71,7 @@ const HotelDetails = () => {
 
   const handleSubmitBooking = (e) => {
     e.preventDefault();
-    console.log(bookingForm);
+    // console.log("booking form data", bookingForm);
   };
 
   return (
@@ -117,11 +118,20 @@ const HotelDetails = () => {
                   useKeyboardArrows={true}
                   showStatus={false}
                 >
+                  {/* <div className="h-[350px] relative">
+                    <Image
+                      src="/img/portada.webp"
+                      alt="imagen 1"
+                      layout="fill"
+                      objectFit="cover"
+                      className="h-full rounded-lg"
+                    />
+                  </div> */}
                   <div className="h-[350px] relative">
                     <img
                       loading="lazy"
-                      src="/img/portada.webp"
-                      alt="imagen 1"
+                      src="/img/playa.webp"
+                      alt="imagen 2"
                       className="h-full rounded-lg object-cover"
                     />
                   </div>
@@ -510,7 +520,8 @@ const HotelDetails = () => {
                       Ver fechas del viaje
                     </p>
                     <button
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.preventDefault();
                         setInputDateRange((prevState) => !prevState);
                       }}
                       className="bg-yellow-500 text-white font-semibold rounded-lg px-2 py-1"
@@ -536,7 +547,8 @@ const HotelDetails = () => {
                         <div className="flex items-center gap-x-2">
                           <button
                             disabled={adults <= 0}
-                            onClick={() => {
+                            onClick={(e) => {
+                              e.preventDefault();
                               setAdults((prevState) => prevState - 1);
                             }}
                             className={
@@ -549,7 +561,8 @@ const HotelDetails = () => {
                           </button>
                           <span>{adults}</span>
                           <button
-                            onClick={() => {
+                            onClick={(e) => {
+                              e.preventDefault();
                               setAdults((prevState) => prevState + 1);
                             }}
                             className="text-gray-600 transition duration-300 ease-out hover:text-gray-800"
@@ -564,7 +577,8 @@ const HotelDetails = () => {
                         <div className="flex items-center gap-x-2">
                           <button
                             disabled={children <= 0}
-                            onClick={() => {
+                            onClick={(e) => {
+                              e.preventDefault();
                               setChildren((prevState) => prevState - 1);
                             }}
                             className={

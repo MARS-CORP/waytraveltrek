@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Home } from '@components/Home/Home';
 
-export default function App({ destinations }) {
+export default function App() {
   return (
     <>
       <Head>
@@ -15,15 +15,15 @@ export default function App({ destinations }) {
   );
 }
 
-export async function loadDestinations() {
-  const res = await fetch('http://localhost:8080/api/v1/destinations');
-  const data = await res.json();
+// export async function loadDestinations() {
+//   const res = await fetch('http://localhost:8080/api/v1/destinations');
+//   const data = await res.json();
 
-  return data;
-}
+//   return data;
+// }
 
-export async function getStaticProps() {
-  const destinations = await loadDestinations();
+// export async function getStaticProps() {
+//   const destinations = await loadDestinations();
 
-  return { props: { destinations } };
-}
+//   return { props: { destinations } };
+// }

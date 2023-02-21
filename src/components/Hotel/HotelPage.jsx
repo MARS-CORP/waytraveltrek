@@ -8,7 +8,7 @@ import { ModalFilter } from "@components/Modal/ModalFilter";
 import { useState } from "react";
 import { CloseModal } from "@components/Modal/CloseModal";
 
-const HotelPage = ({ hotels }) => {
+const HotelPage = () => {
   const [mounted, setMounted] = useState(false);
 
   return (
@@ -22,7 +22,7 @@ const HotelPage = ({ hotels }) => {
           <CloseModal setMounted={setMounted} />
           <FilterHotelsMobile />
         </ModalFilter>
-        <HotelList hotels={hotels} />
+        <HotelList />
       </main>
     </>
   );

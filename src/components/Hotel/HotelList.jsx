@@ -6,7 +6,7 @@ const HotelList = () => {
     {
       id: 1,
       name: "Habana libre",
-      imageUrl: "portada.webp",
+      imageUrl: "/img/portada.webp",
       imageAlt: "Descripcion de la imagen",
       category: 5,
       qualification: 4.2,
@@ -18,7 +18,7 @@ const HotelList = () => {
     {
       id: 2,
       name: "Melia Inernacional Varadero",
-      imageUrl: "portada.webp",
+      imageUrl: "/img/portada.webp",
       imageAlt: "Descripcion de la imagen",
       category: 5,
       qualification: 4.2,
@@ -30,7 +30,7 @@ const HotelList = () => {
     {
       id: 3,
       name: "Blue Diamond Prado y Malecón",
-      imageUrl: "portada.webp",
+      imageUrl: "/img/portada.webp",
       imageAlt: "Descripcion de la imagen",
       category: 5,
       qualification: 4.2,
@@ -54,7 +54,7 @@ const HotelList = () => {
           price,
           description,
         }) => (
-          <Link href={"#"} key={id}>
+          <Link href={"hotels/1"} key={id}>
             <a>
               <HotelCard
                 id={id}

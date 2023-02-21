@@ -4,11 +4,8 @@ import { Destination } from "@components/DestinationSection/Destination";
 import { RecommendedHotelList } from "@components/Hotel/RecommendedHotelList";
 import { RecommendedCars } from "@components/Cars/RecommendedCars";
 import { AcceptedPayments } from "@components/Payment/AcceptedPayments";
-import HeroCenter from "../HeroSection/HeroCenter";
 import HeroToLeft from "../HeroSection/HeroToLeft";
 import HeroToRight from "../HeroSection/HeroToRight";
-import Hero from "../HeroSection/HeroToRight";
-import Navbar from "../Navbar/Navbar";
 import { SectionTitle } from "@components/SectionTitle/SectionTitle";
 
 const Home = () => {

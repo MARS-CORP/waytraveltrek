@@ -1,14 +1,14 @@
 import { Layout } from '@components/Layout';
 import '@styles/globals.css';
 import 'animate.css';
-import AppContext from '@context/AppContext';
+// import AppContext from '@context/AppContext';
 import ProgressBar from '@badrap/bar-of-progress';
 import { Router } from 'next/router';
 
 const progress = new ProgressBar({
   size: 3,
   delay: 100,
-  color: 'rgb(0,0,0)',
+  color: '#fbbf24',
   className: 'z-50',
 });
 

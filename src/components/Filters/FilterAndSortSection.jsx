@@ -3,7 +3,7 @@ import { FilterAlt, Sort } from "@mui/icons-material";
 
 const FilterAndSortSection = ({ setMounted }) => {
   const handleOpen = () => {
-    setMounted((prevState) => (prevState = true));
+    setMounted(true);
   };
 
   return (

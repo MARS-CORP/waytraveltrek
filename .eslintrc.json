@@ -2,7 +2,7 @@
   "parserOptions": {
     "ecmaVersion": 2018
   },
-  "extends": ["next/core-web-vitals", "eslint:recommended", "prettier"],
+  "extends": ["next/core-web-vitals"],
   "env": {
     "es6": true,
     "node": true,
@@ -12,3 +12,5 @@
     "no-console": "warn"
   }
 }
+
+// , "eslint:recommended", "prettier"

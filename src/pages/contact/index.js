@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import ContactPage from '../../components/Contact/ContactPage';
+import ContactPage from '@components/Contact/ContactPage';
 
 export default function index() {
   return (

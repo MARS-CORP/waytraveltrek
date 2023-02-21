@@ -21,8 +21,8 @@ const HotelCard = ({
         <div className="md:shrink-0">
           <div className="relative h-48 w-full md:h-full md:w-48">
             <Image
-              src={`/img/portada.webp`}
-              alt={"Descripcion de la imagen"}
+              src={imageUrl}
+              alt={imageAlt}
               layout="fill"
               objectFit="cover"
             />

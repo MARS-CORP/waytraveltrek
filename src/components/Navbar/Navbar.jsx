@@ -45,6 +45,7 @@ const Navbar = () => {
           ))}
         </ul>
 
+        {/* Menu de navegacion para mobiles */}
         <div className="md:hidden">
           <button onClick={handleToggleMenu} className="block">
             {toggleMenu ? (
@@ -56,10 +57,10 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`backdrop-blur-sm bg-white/90 w-64 min-h-screen absolute top-20 right-0 md:hidden shadow-md ${
+          className={`backdrop-blur-sm bg-white/95 w-64 min-h-screen absolute top-20 right-0 md:hidden shadow-md ${
             toggleMenu
-              ? "animate__animated animate__slideInRight"
-              : "animate__animated animate__slideOutRight"
+              ? "animate__animated animate__bounceInDown"
+              : "animate__animated animate__bounceOutUp"
           }`}
         >
           <ul className="list-none flex flex-col items-center justify-center md:hidden gap-4 mt-10">

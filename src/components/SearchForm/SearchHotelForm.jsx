@@ -5,23 +5,18 @@ const SearchHotelForm = () => {
   const [destination, setDestination] = useState("");
 
   function handleChange(ev) {
-    const { name, value, type } = ev.target;
-    setDestination((prevDestination) => {
+    const { name, value, type, checked } = ev.target;
+    setDestination((destination) => {
       return {
-        ...prevDestination,
+        ...destination,
         [name]: type === "checkbox" ? checked : value,
       };
     });
-    console.log("State has change");
   }
 
   function handleSubmit(ev) {
     ev.preventDefault();
-
-    console.log("Form has been submitted");
   }
-
-  console.log(destination);
 
   return (
     <section className="relative flex justify-center items-center px-40 w-full">
