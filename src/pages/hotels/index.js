@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { HotelPage } from '@components/Hotel/HotelPage';
 
 export default function Hotels({ hotels }) {
-  console.log(hotels);
   return (
     <>
       <Head>
