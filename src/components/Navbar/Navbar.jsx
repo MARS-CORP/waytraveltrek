@@ -22,7 +22,9 @@ const Navbar = () => {
           <a>
             <div className="relative w-16 h-16">
               <Image
-                src={"/img/logo.webp"}
+                src={
+                  "https://res.cloudinary.com/waytraveltrek/image/upload/v1677013211/waytraveltrek/logo_jvygjz.png"
+                }
                 alt="Logo"
                 layout="fill"
                 objectFit="cover"

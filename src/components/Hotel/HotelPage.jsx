@@ -13,7 +13,10 @@ const HotelPage = () => {
 
   return (
     <>
-      <HotelHeader imageLink="portada.webp" imageAlt="Imagen de portada" />
+      <HotelHeader
+        imageLink="https://res.cloudinary.com/waytraveltrek/image/upload/v1677013484/waytraveltrek/portada_f4g0db.png"
+        imageAlt="Imagen de portada"
+      />
       <SearchHotelForm />
       <main className="md:grid md:grid-cols-3 px-1">
         <FilterAndSortSection setMounted={setMounted} />

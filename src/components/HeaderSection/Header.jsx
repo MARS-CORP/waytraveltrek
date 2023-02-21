@@ -2,10 +2,12 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="text-center relative h-screen w-full flex items-center justify-center md:grid md:grid-cols-3">
+    <div className="text-center relative h-screen w-full flex items-center justify-center md:grid md:grid-cols-3">
       <div className="relative w-full h-full md:col-span-2 md:rounded-md md:overflow-hidden">
         <Image
-          src="/img/portada.webp"
+          src={
+            "https://res.cloudinary.com/waytraveltrek/image/upload/v1677013484/waytraveltrek/portada_f4g0db.png"
+          }
           alt="Imagen de portada del sitio web"
           layout="fill"
           objectFit="cover"
@@ -21,7 +23,7 @@ const Header = () => {
           </span>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

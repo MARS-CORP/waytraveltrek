@@ -30,6 +30,5 @@ const Home = () => {
     </>
   );
 };
-// flex flex-row overflow-x-scroll md:grid md:grid-cols-3 md:gap-4 lg:overflow-x-hidden
 
 export { Home };

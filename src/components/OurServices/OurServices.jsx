@@ -4,21 +4,24 @@ const OurServices = () => {
   const data = [
     {
       id: 1,
-      imageUrl: "portada.webp",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677019217/waytraveltrek/rooftop-terrace-at-gran_tjbk1m.jpg",
       imageAlt: "Texto de descripcion de imagen",
       serviceName: "Hoteles",
       linkTo: "/hotels",
     },
     {
       id: 2,
-      imageUrl: "portada.webp",
-      imageAlt: "Texto de descripcion de imagen",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677013329/waytraveltrek/301_nsmpvt.jpg",
+      imageAlt: "Imagen de un auto",
       serviceName: "Autos de Renta",
       linkTo: "#",
     },
     {
       id: 3,
-      imageUrl: "portada.webp",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677019213/waytraveltrek/photo0jpg_ezl5lc.jpg",
       imageAlt: "Texto de descripcion de imagen",
       serviceName: "Casas de Renta",
       linkTo: "#",

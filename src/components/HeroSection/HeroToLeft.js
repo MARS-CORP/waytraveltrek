@@ -6,7 +6,9 @@ function HeroToLeft(props) {
       <div className="relative h-96 w-full flex justify-center items-center lg:grid lg:grid-cols-3 overflow-hidden">
         <div className="relative h-96 w-full lg:col-span-2">
           <Image
-            src="/img/playa.webp"
+            src={
+              'https://res.cloudinary.com/waytraveltrek/image/upload/v1677013448/waytraveltrek/playa_d9gb7t.jpg'
+            }
             alt="Image description"
             layout="fill"
             objectFit="cover"

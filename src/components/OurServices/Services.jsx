@@ -11,7 +11,7 @@ function Services({ imageUrl, imageAlt, serviceName, linkTo }) {
     >
       <div className="relative h-60 w-80 md:w-full">
         <Image
-          src={`/img/${imageUrl}`}
+          src={imageUrl}
           alt={imageAlt}
           layout="fill"
           objectFit="cover"

@@ -6,7 +6,8 @@ const RecommendedCars = () => {
     {
       id: 1,
       name: "Peugeot 301",
-      imageUrl: "301.webp",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677013329/waytraveltrek/301_nsmpvt.jpg",
       imageAlt: "image description",
       category: "Medio",
       description:
@@ -24,15 +25,16 @@ const RecommendedCars = () => {
     },
     {
       id: 2,
-      name: "Hyundai Accent",
-      imageUrl: "301.webp",
+      name: "Mercedes Benz",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677018731/waytraveltrek/Mercedes_C_class_cttwy3.png",
       imageAlt: "image description",
-      category: "Medio",
+      category: "Premium",
       description:
         "Lorem ipsum dolor sit amet ipsum commodo clita stet ea minim et. Ut et nulla augue doming aliquam stet at nonumy ut lorem vero augue.",
       characteristics: [
         {
-          gear: "M",
+          gear: "A",
           air_conditioner: true,
           bags: 4,
           fuel_type: "Gasolina",
@@ -43,15 +45,16 @@ const RecommendedCars = () => {
     },
     {
       id: 3,
-      name: "Hyubndai Elantra",
-      imageUrl: "301.webp",
+      name: "Hyundai Sonata",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677018592/waytraveltrek/Hyundai_sonata_omjggl.jpg",
       imageAlt: "image description",
       category: "Medio",
       description:
         "Lorem ipsum dolor sit amet ipsum commodo clita stet ea minim et. Ut et nulla augue doming aliquam stet at nonumy ut lorem vero augue.",
       characteristics: [
         {
-          gear: "M",
+          gear: "A",
           air_conditioner: true,
           bags: 4,
           fuel_type: "Gasolina",
@@ -63,7 +66,7 @@ const RecommendedCars = () => {
   ];
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-2">
-      {cars.map((car) => (
+      {cars?.map((car) => (
         <Link href={"#"} key={car.id}>
           <a>
             <Cars car={car} />

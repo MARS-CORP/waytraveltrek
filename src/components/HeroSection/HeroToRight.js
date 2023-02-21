@@ -16,7 +16,9 @@ function HeroToRight(props) {
         </div>
         <div className="relative h-96 w-full ">
           <Image
-            src="/img/faro.webp"
+            src={
+              'https://res.cloudinary.com/waytraveltrek/image/upload/v1677013723/waytraveltrek/faro_bmejvv.jpg'
+            }
             alt="Image description"
             layout="fill"
             objectFit="cover"

@@ -130,7 +130,7 @@ const HotelDetails = () => {
                   <div className="h-[350px] relative">
                     <img
                       loading="lazy"
-                      src="/img/playa.webp"
+                      src="https://res.cloudinary.com/waytraveltrek/image/upload/v1677019596/waytraveltrek/hotel-internacional-varadero_02_k9uzem.jpg"
                       alt="imagen 2"
                       className="h-full rounded-lg object-cover"
                     />
@@ -138,7 +138,7 @@ const HotelDetails = () => {
                   <div className="h-[350px] relative">
                     <img
                       loading="lazy"
-                      src="/img/playa.webp"
+                      src="https://res.cloudinary.com/waytraveltrek/image/upload/v1677019411/waytraveltrek/breakfast-goals-lavish_crgsi5.jpg"
                       alt="imagen 2"
                       className="h-full rounded-lg object-cover"
                     />
@@ -146,7 +146,23 @@ const HotelDetails = () => {
                   <div className="h-[350px] relative">
                     <img
                       loading="lazy"
-                      src="/img/faro.webp"
+                      src="https://res.cloudinary.com/waytraveltrek/image/upload/v1677019472/waytraveltrek/gran-hotel-bristol-la_omp5np.jpg"
+                      alt="imagen 3"
+                      className="h-full rounded-lg object-cover"
+                    />
+                  </div>
+                  <div className="h-[350px] relative">
+                    <img
+                      loading="lazy"
+                      src="https://res.cloudinary.com/waytraveltrek/image/upload/v1677019213/waytraveltrek/photo0jpg_ezl5lc.jpg"
+                      alt="imagen 3"
+                      className="h-full rounded-lg object-cover"
+                    />
+                  </div>
+                  <div className="h-[350px] relative">
+                    <img
+                      loading="lazy"
+                      src="https://res.cloudinary.com/waytraveltrek/image/upload/v1677019218/waytraveltrek/iberostar-bella-costa_2_owuoys.jpg"
                       alt="imagen 3"
                       className="h-full rounded-lg object-cover"
                     />
@@ -644,7 +660,7 @@ const HotelDetails = () => {
             </h2>
 
             <div className="grid grid-cols-1 gap-y-8 max-h-[500px] overflow-auto scrollbar-hide">
-              <div className="w-full bg-white/95 rounded-md shadow-lg p-4 border ">
+              <div className="max-w-md md:max-w-xl lg:max-w-3xl mx-auto bg-white/95 rounded-md shadow-lg p-4 border ">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-semibold tracking-wide">John Doe</h3>
                   <span className="font-light">Hace 2 minutos</span>
@@ -666,7 +682,7 @@ const HotelDetails = () => {
                 </div>
               </div>
 
-              <div className="w-full bg-white/95 rounded-md shadow-lg p-4 border ">
+              <div className="max-w-md md:max-w-xl lg:max-w-3xl mx-auto bg-white/95 rounded-md shadow-lg p-4 border ">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-semibold tracking-wide">John Doe</h3>
                   <span className="font-light">Hace 2 minutos</span>
@@ -688,7 +704,7 @@ const HotelDetails = () => {
                 </div>
               </div>
 
-              <div className="w-full bg-white/95 rounded-md shadow-lg p-4 border">
+              <div className="max-w-md md:max-w-xl lg:max-w-3xl mx-auto bg-white/95 rounded-md shadow-lg p-4 border">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-semibold tracking-wide">John Doe</h3>
                   <span className="font-light">Hace 2 minutos</span>

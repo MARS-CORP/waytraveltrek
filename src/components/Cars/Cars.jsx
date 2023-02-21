@@ -13,7 +13,7 @@ function Cars({ car }) {
         <div className="md:shrink-0">
           <div className="relative w-full h-48 md:h-full md:w-48">
             <Image
-              src={`/img/${car.imageUrl}`}
+              src={car.imageUrl}
               alt={car.imageAlt}
               layout="fill"
               objectFit="cover"

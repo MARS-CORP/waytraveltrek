@@ -11,7 +11,7 @@ const Footer = () => {
           <a>
             <div className="relative w-36 h-32">
               <Image
-                src={`/img/logo.webp`}
+                src={`https://res.cloudinary.com/waytraveltrek/image/upload/v1677013211/waytraveltrek/logo_jvygjz.png`}
                 alt="Imagen del logo"
                 layout="fill"
                 objectFit="cover"

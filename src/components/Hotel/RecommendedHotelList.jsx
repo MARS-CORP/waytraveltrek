@@ -6,7 +6,8 @@ const RecommendedHotelList = () => {
     {
       id: 1,
       name: "Habana libre",
-      imageUrl: "portada.webp",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677019472/waytraveltrek/gran-hotel-bristol-la_omp5np.jpg",
       imageAlt: "Descripcion de la imagen",
       category: 5,
       qualification: 4.2,
@@ -18,7 +19,8 @@ const RecommendedHotelList = () => {
     {
       id: 2,
       name: "Melia Inernacional Varadero",
-      imageUrl: "portada.webp",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677019596/waytraveltrek/hotel-internacional-varadero_02_k9uzem.jpg",
       imageAlt: "Descripcion de la imagen",
       category: 5,
       qualification: 4.2,
@@ -29,8 +31,9 @@ const RecommendedHotelList = () => {
     },
     {
       id: 3,
-      name: "Blue Diamond Prado y Malecón",
-      imageUrl: "portada.webp",
+      name: "Gran Manzana Kempinski",
+      imageUrl:
+        "https://res.cloudinary.com/waytraveltrek/image/upload/v1677019219/waytraveltrek/gran-hotel-manzana-kempinski_1_ay5zsf.jpg",
       imageAlt: "Descripcion de la imagen",
       category: 5,
       qualification: 4.2,
