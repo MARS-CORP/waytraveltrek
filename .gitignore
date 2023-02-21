@@ -233,4 +233,7 @@ $RECYCLE.BIN/
 # vercel
 .vercel
 
+#Ignoring images inside the public folder
+img/
+
 # End of https://www.toptal.com/developers/gitignore/api/nextjs,node,windows,macos,linux,react
