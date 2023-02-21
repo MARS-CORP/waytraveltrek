@@ -18,7 +18,7 @@ import {
   SportsTennisOutlined,
   WifiOutlined,
 } from "@mui/icons-material";
-import { DateRangePicker } from "react-date-range";
+import { DateRange, DateRangePicker } from "react-date-range";
 import { format } from "date-fns";
 
 const HotelDetails = () => {
@@ -388,8 +388,9 @@ const HotelDetails = () => {
                   </article>
                 </div>
 
+                {/* Calendario de reservas */}
                 {inputDateRange && (
-                  <div className="absolute hidden lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-y-4 bottom-0 left-0 right-0 z-10 bg-white shadow-lg rounded-lg p-8">
+                  <div className="hidden lg:absolute lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-y-4 bottom-0 left-0 right-0 z-10 bg-white shadow-lg rounded-lg p-8">
                     <button
                       onClick={() => {
                         setInputDateRange(false);
@@ -413,7 +414,7 @@ const HotelDetails = () => {
                         <button
                           disabled={adults <= 0}
                           onClick={() => {
-                            setAdults((prevState) => adults - 1);
+                            setAdults((prevState) => prevState - 1);
                           }}
                           className={
                             adults <= 0
@@ -426,7 +427,7 @@ const HotelDetails = () => {
                         <span>{adults}</span>
                         <button
                           onClick={() => {
-                            setAdults((prevState) => adults + 1);
+                            setAdults((prevState) => prevState + 1);
                           }}
                           className="text-gray-600 transition duration-300 ease-out hover:text-gray-800"
                         >
@@ -441,7 +442,7 @@ const HotelDetails = () => {
                         <button
                           disabled={children <= 0}
                           onClick={() => {
-                            setChildren((prevState) => children - 1);
+                            setChildren((prevState) => prevState - 1);
                           }}
                           className={
                             children <= 0
@@ -454,7 +455,7 @@ const HotelDetails = () => {
                         <span>{children}</span>
                         <button
                           onClick={() => {
-                            setChildren((prevState) => children + 1);
+                            setChildren((prevState) => prevState + 1);
                           }}
                           className="text-gray-600 transition duration-300 ease-out hover:text-gray-800"
                         >
@@ -469,7 +470,7 @@ const HotelDetails = () => {
                         <button
                           disabled={babies <= 0}
                           onClick={() => {
-                            setBabies((prevState) => babies - 1);
+                            setBabies((prevState) => prevState - 1);
                           }}
                           className={
                             babies <= 0
@@ -482,7 +483,7 @@ const HotelDetails = () => {
                         <span>{babies}</span>
                         <button
                           onClick={() => {
-                            setBabies((prevState) => babies + 1);
+                            setBabies((prevState) => prevState + 1);
                           }}
                           className="text-gray-600 transition duration-300 ease-out hover:text-gray-800"
                         >
@@ -492,6 +493,130 @@ const HotelDetails = () => {
                     </div>
                   </div>
                 )}
+
+                {/* Menu de calendario de reservas solo para mobiles */}
+                <div
+                  className={`fixed bottom-0 left-0 bg-white w-full p-4 border-t z-50 lg:hidden ${
+                    inputDateRange ? "max-h-full" : "max-h-16"
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <p
+                      onClick={() => {
+                        setInputDateRange((prevState) => !prevState);
+                      }}
+                      className="underline underline-offset-1 text-gray-700 font-semibold cursor-pointer"
+                    >
+                      Ver fechas del viaje
+                    </p>
+                    <button
+                      onClick={() => {
+                        setInputDateRange((prevState) => !prevState);
+                      }}
+                      className="bg-yellow-500 text-white font-semibold rounded-lg px-2 py-1"
+                    >
+                      Ver fechas
+                    </button>
+                  </div>
+
+                  {/* Calendarion de reservas para mobiles */}
+                  <div className="flex flex-col items-center justify-center gap-y-4 p-8 lg:hidden">
+                    <DateRange
+                      ranges={[ranges]}
+                      minDate={new Date()}
+                      rangeColors={["#fbbf24"]}
+                      months={1}
+                      direction="vertical"
+                      onChange={handleSelectDates}
+                      preventSnapRefocus={true}
+                    />
+                    <div className="w-80">
+                      <div className="flex items-center justify-between gap-x-4">
+                        <p>Adultos (13 a&ntilde;os o m&aacute;s )</p>
+                        <div className="flex items-center gap-x-2">
+                          <button
+                            disabled={adults <= 0}
+                            onClick={() => {
+                              setAdults((prevState) => prevState - 1);
+                            }}
+                            className={
+                              adults <= 0
+                                ? "text-gray-400 cursor-not-allowed"
+                                : "text-gray-600 transition duration-300 ease-out hover:text-gray-800"
+                            }
+                          >
+                            <RemoveCircleOutline />
+                          </button>
+                          <span>{adults}</span>
+                          <button
+                            onClick={() => {
+                              setAdults((prevState) => prevState + 1);
+                            }}
+                            className="text-gray-600 transition duration-300 ease-out hover:text-gray-800"
+                          >
+                            <AddCircleOutline />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-between gap-x-4">
+                        <p>Ni&ntilde;os (De 2 a 12 a&ntilde;os)</p>
+                        <div className="flex items-center gap-x-2">
+                          <button
+                            disabled={children <= 0}
+                            onClick={() => {
+                              setChildren((prevState) => prevState - 1);
+                            }}
+                            className={
+                              children <= 0
+                                ? "text-gray-400 cursor-not-allowed"
+                                : "text-gray-600 transition duration-300 ease-out hover:text-gray-800"
+                            }
+                          >
+                            <RemoveCircleOutline />
+                          </button>
+                          <span>{children}</span>
+                          <button
+                            onClick={() => {
+                              setChildren((prevState) => prevState + 1);
+                            }}
+                            className="text-gray-600 transition duration-300 ease-out hover:text-gray-800"
+                          >
+                            <AddCircleOutline />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-between gap-x-4">
+                        <p>Beb&eacute;s (de 0 a 2 a&ntilde;os)</p>
+                        <div className="flex items-center gap-x-2">
+                          <button
+                            disabled={babies <= 0}
+                            onClick={() => {
+                              setBabies((prevState) => prevState - 1);
+                            }}
+                            className={
+                              babies <= 0
+                                ? "text-gray-400 cursor-not-allowed"
+                                : "text-gray-600 transition duration-300 ease-out hover:text-gray-800"
+                            }
+                          >
+                            <RemoveCircleOutline />
+                          </button>
+                          <span>{babies}</span>
+                          <button
+                            onClick={() => {
+                              setBabies((prevState) => prevState + 1);
+                            }}
+                            className="text-gray-600 transition duration-300 ease-out hover:text-gray-800"
+                          >
+                            <AddCircleOutline />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </section>
@@ -500,10 +625,76 @@ const HotelDetails = () => {
 
           {/* Seccion de comentarios */}
           <section>
-            <div>
-              <h2 className="text-xl lg:text-2xl xl:text-3xl font-semibold mb-4">
-                Comentarios
-              </h2>
+            <h2 className="text-xl lg:text-2xl xl:text-3xl font-semibold mb-6">
+              Comentarios
+            </h2>
+
+            <div className="grid grid-cols-1 gap-y-8 max-h-[500px] overflow-auto scrollbar-hide">
+              <div className="w-full bg-white/95 rounded-md shadow-lg p-4 border ">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-semibold tracking-wide">John Doe</h3>
+                  <span className="font-light">Hace 2 minutos</span>
+                </div>
+                <div className="mb-4">
+                  <p>
+                    Evaluaci&oacute;n:{" "}
+                    <span className="font-semibold"> 4.4/5</span>
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi voluptates ipsam ducimus sequi? Iste veritatis vero,
+                    officia fuga quae magni, possimus laboriosam voluptatibus
+                    saepe inventore at culpa accusantium asperiores quo!
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full bg-white/95 rounded-md shadow-lg p-4 border ">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-semibold tracking-wide">John Doe</h3>
+                  <span className="font-light">Hace 2 minutos</span>
+                </div>
+                <div className="mb-4">
+                  <p>
+                    Evaluaci&oacute;n:{" "}
+                    <span className="font-semibold"> 4.4/5</span>
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi voluptates ipsam ducimus sequi? Iste veritatis vero,
+                    officia fuga quae magni, possimus laboriosam voluptatibus
+                    saepe inventore at culpa accusantium asperiores quo!
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full bg-white/95 rounded-md shadow-lg p-4 border">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-semibold tracking-wide">John Doe</h3>
+                  <span className="font-light">Hace 2 minutos</span>
+                </div>
+                <div className="mb-4">
+                  <p>
+                    Evaluaci&oacute;n:{" "}
+                    <span className="font-semibold"> 4.4/5</span>
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi voluptates ipsam ducimus sequi? Iste veritatis vero,
+                    officia fuga quae magni, possimus laboriosam voluptatibus
+                    saepe inventore at culpa accusantium asperiores quo!
+                  </p>
+                </div>
+              </div>
             </div>
           </section>
         </main>
