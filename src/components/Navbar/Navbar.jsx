@@ -26,6 +26,7 @@ const Navbar = () => {
                 alt="Logo"
                 layout="fill"
                 objectFit="cover"
+                priority
               />
             </div>
           </a>
